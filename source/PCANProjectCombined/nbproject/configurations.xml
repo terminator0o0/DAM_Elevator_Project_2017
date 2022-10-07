@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>PCANBasic.h</itemPath>
+      <itemPath>pcan.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>pcanProjCon.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="PCANBasic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pcan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pcanProjCon.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>../../Downloads/mysql-connector-c++-1.1.8-linux-ubuntu16.10-x86-64bit/include</pElem>
+            <pElem>../../Downloads/mysql-connector-c++-1.1.8-linux-ubuntu16.10-x86-64bit/include/cppconn</pElem>
+            <pElem>../../Downloads/boost_1_64_0</pElem>
+          </incDir>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/pcanprojectcombined</output>
+          <linkerAddLib>
+            <pElem>../../Downloads/mysql-connector-c++-1.1.8-linux-ubuntu16.10-x86-64bit/lib</pElem>
+            <pElem>../../Desktop/PCAN_Basic_Linux-4.1.1/pcanbasic/examples/c++/src</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibFileItem>../../Downloads/mysql-connector-c++-1.1.8-linux-ubuntu16.10-x86-64bit/lib/libmysqlcppconn.so</linkerLibFileItem>
+            <linkerLibFileItem>/opt/lampp/lib/libmysqlclient.a</linkerLibFileItem>
+            <linkerLibLibItem>pcanbasic</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="PCANBasic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pcan.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="pcanProjCon.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

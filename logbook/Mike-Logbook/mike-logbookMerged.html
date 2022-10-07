@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang-"en">
+	<head>
+		<title> Mike Akl's Log Book</title>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/nav_bar.css">
+	</head>
+	
+	<body>
+	    <header>
+        <ul class="nav_bar">
+        <div class="h_menue">
+            <li>
+                <a href="../../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../../about.html">About</a>
+            </li>
+            <li>
+                <a href="../../project_details.html">Project Details</a>
+            </li>
+            <li>
+                <a href="../../project_plan.html">Project Plan</a>
+            </li>
+            <li style="float:right">
+                <a href="login.html">Login</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="javascript:void(0)">DAM Logbook</a>
+                <div class="dropdown-content">
+                    <a href="../logbook/dinkar-logbook.html">Dinkar</a> 
+                    <a href="../logbook/anas-logbook.html">Anas</a>
+					<a href="mike-logbook.html">Mike</a>
+                </div>
+            </li>
+        </div>
+        </ul>
+		</header>
+		<h1>Mike Akl's Entries by Week</h1>
+		<div class="mikeList">
+		<ul>
+			<!--  -->
+		<h1><b>WEEK 1</b></h1>			
+			<ul>
+				<li> Worked on gantt chart for project</li>
+				<li> Worked on Project Plan</li>
+				<li> Built git repo </li>
+				<li> Added log book enteries, main page etc. </li>
+				<li> Worked on MSCAN module</li>
+			</ul>
+			<!--  -->
+			<h1><b>WEEK 2</b></h1>
+			<ul>
+				<li> Worked on transmit and recieve for CAN Module</li>
+				<ul>
+					<li> Worked through App note to take the code and understand CAN module </li>
+					<li> We will use 125 kbits/s, using N=8, K=8 </li>
+					<li> Had trouble getting working TX/RX to work </li>
+					<li> Got the loopback to work but still not working through PCAN </li>
+				</ul>
+			</ul>
+			<!--  -->
+			<h1><b>WEEK 3</b></h1>
+			<ul>
+				<li> Worked on CAN Rx/TX code for project</li>
+				<ul>
+					<li> Worked with Prof. Mike to get it working. Seems to be issue with our initialization </li>
+					<li> Now working! </li>
+					<li> Found that receiver interrupt not working </li>
+					<li> Multiple recieve was not working because of interrupt not working, for now clearing CANRFLG bit 0 to make it work </li>
+				</ul>
+				<li> Decided on CAN protocal and implementations </li>
+				<li> Added parts of project plan to website</li>
+			</ul>
+			<!--  -->
+			<h1><b>WEEK 4</b></h1>
+			<ul>
+				<li> Worked on Supervisor Node for project with Anas</li>
+				<ul>
+					<li> The supervisor node will be implemented on the computer in Ubuntu </li>
+					<li> Had to download driver and API from peak (http://www.peak-system.com/Software-APIs.305.0.html?&L=1)</li>
+					<li> After some pain figuring out the driver, it started to work</li>
+					<li> Worked with the API too </li>
+					<li> Combined the read and write with switch statement to implemente basic logic</li>
+					<li> Supervisor now sends to motor control </li> 
+				</ul>
+				<li> Worked on simple state machine diagram with Anas</li>
+				<h2> State Machine Rev1 </h2>
+				<img src="C:\Users\makl0971\Documents\GitFolder2017\project_6_2017\images\StateMachineElevator.jpg" alt="State Machine Rev1" style="width:500px;height:350px;">
+				<li> Tested the full project on the Elevator, had some issues</li>
+				<ul>
+					<li> The motor control was sending at a different location than understood</li>
+					<li> Seems like elevator car sometimes stops responding to our requests, whether it be because of sensor or our code, need to figure it out</li>
+					<li> For the most part it works </li>
+				</ul>
+			</ul>
+			<!--  -->
+			<h1><b>WEEK 5</b></h1>
+			<!--  -->
+			<h1><b>WEEK 6</b></h1>
+			<ul>
+				<li> Worked on Project Website</li>
+				<ul>
+					<li> Changed home page design to include video in background </li>
+					<li> Adjusted login page to use css and make it look better</li>
+					<li> Followed the software engineering assignment to make different changes to website</li>
+					<li> Created video and uploaded it to website </li>
+					<li> Adjusted request access page</li>
+					<li> Fixed issue with drop down menu to work inside of my logbook page</li>
+				</ul>
+				<li> Created database using MariaDB</li>
+				<ul>
+					<li> Created two tables - users(for loging in) and canNetwork</li>
+					<li> Worked with Anas to connect the users table to the website </li>
+					<li> ^It worked!!</li>
+				</ul>
+			</ul>
+			<!--  -->
+			<h1><b>WEEK 7</b></h1>
+			<ul>
+				<li>Worked on project website </li>
+			</ul>
+			<!--<li>Week 1</li>
+			<li>Week 1</li>
+			<li>Week 1</li>
+			<li>Week 1</li>
+			<li>Week 1</li>-->
+		</ul>
+		</div>
+	</body>
+</html>

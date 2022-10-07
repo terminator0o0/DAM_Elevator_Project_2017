@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mike Akl - Log Book</title>
+    <meta content="Group DAM" http-equiv="author">
+    <meta content="no-cache" http-equiv="pragma">
+    <!-- Latest compiled and minified CSS -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link href="../css/modal.css" rel="stylesheet" type="text/css">
+    <link href="../css/logbook.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type=
+                    "button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href="../index.html">DAM Elevator</a>
+                </div>
+                <div id="myNavbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../project_details.html">Project Details</a></li>
+                        <li><a href="../project_plan.html">Project Plan</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">LogBooks<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dinkar-logbook.html">Dinkar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="anas-logbook.html">Anas</a></li>
+                                <li class="divider"></li>
+                                <li><a href="mike-logbook.html">Mike</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../request_access.html"><span class="glyphicon glyphicon-user"></span> Sign-Up</a></li>
+                        <li>
+                            <a data-target="#myModal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header"><button class="close" data-dismiss="modal" type=
+                    "button">&times;</button>
+                    <h4 class="modal-title">Login</h4><img alt="" class="profile-img-card" src=
+                    "../images/logo_sm.png"></div>
+                    <div class="modal-body">
+                        <form id="form-validate" action="../php/login.php" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control" id="username" name="username" placeholder="Enter Username"
+                                type="text">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password"
+                                type="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-default" type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   <div class="container-fluid text-center bg-grey-dark" id="title">
+		<h1>Mike Akl's Log-Book</h1>
+		<img class="img-responsive img-circle" src="../images/mike.jpg">
+		<p id="name">mike</p>
+		<script src="../js/logbook.js"></script>
+	</div>
+	<section class="bg-grey-light">
+	<div class="container logbook-content">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week1">Week
+						1</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week1">
+						<div class="panel-body">
+							<ul>
+								<li>Worked on gantt chart for project</li>
+								<li>Worked on Project Plan</li>
+								<li>Built git repo</li>
+								<li>Added log book enteries, main page etc.</li>
+								<li>Worked on MSCAN module</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week2">Week
+						2</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week2">
+						<div class="panel-body">
+							<ul>
+								<li>Worked through App note to take the code and understand CAN module</li>
+								<li>We will use 125 kbits/s, using N=8, K=8</li>
+								<li>Had trouble getting working TX/RX to work</li>
+								<li>Got the loopback to work but still not working through PCAN</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week3">Week
+						3</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week3">
+						<div class="panel-body">
+							<ul>
+								<li>Worked on CAN Rx/TX code for project</li>
+								<li>Worked with Prof. Mike to get it working. Seems to be issue with our initialization</li>
+								<li>Now working!</li>
+								<li>Found that receiver interrupt not working</li>
+								<li>Multiple recieve was not working because of interrupt not working, for now clearing
+								CANRFLG bit 0 to make it work</li>
+								<li>Decided on CAN protocal and implementations</li>
+								<li>Added parts of project plan to website</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week4">Week
+						4</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week4">
+						<div class="panel-body">
+							<ul>
+								<li>Finished Assignment 5 and 6 in math</li>
+								<li>Created floor control</li>
+								<li>Created elevator control</li>
+								<li>Created Supervisor</li>
+								<li>Started natural science lab document</li>
+								<li>Prepared for natural science presentaion</li>
+								<li>Prepared for thermodynamics lab</li>
+								<li>Studied for math midterm</li>
+								<li>Made the state machine for the elevator</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week5">Week
+						5</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week5">
+						<div class="panel-body">
+							<ul>
+								<li>The supervisor node will be implemented on the computer in Ubuntu</li>
+								<li>Had to download driver and API from
+								<a href="http://www.peak-system.com/Software-APIs.305.0.html?&L=1" target="_blank"><i>Peak Systems</i></a></li>
+								<li>After some pain figuring out the driver, it started to work</li>
+								<li>Worked with the API too</li>
+								<li>Combined the read and write with switch statement to implemente basic logic</li>
+								<li>Supervisor now sends to motor control</li>
+							</ul>
+							<ul>
+								<li>Worked on simple state machine diagram with Anas</li>
+								<li style="list-style: none; display: inline">
+									<h2>State Machine Rev1</h2><img class="img-responsive" alt="State Machine Rev1" src=
+									"../images/StateMachineElevator.jpg" style="width:500px;height:350px;">
+								</li>
+								<li>Tested the full project on the Elevator, had some issues</li>
+								<li style="list-style: none; display: inline">
+									<ul>
+										<li>The motor control was sending at a different location than understood</li>
+										<li>Seems like elevator car sometimes stops responding to our requests, whether it be
+										because of sensor or our code, need to figure it out</li>
+										<li>For the most part it works</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week6">Week
+						6</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week6">
+						<div class="panel-body">
+							<ul>
+								<li> Changed home page design to include video in background </li>
+								<li> Adjusted login page to use css and make it look better</li>
+								<li> Followed the software engineering assignment to make different changes to website</li>
+								<li> Created video and uploaded it to website </li>
+								<li> Adjusted request access page</li>
+								<li> Fixed issue with drop down menu to work inside of my logbook page</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week7">Week
+						7</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week7">
+						<div class="panel-body">
+							<ul>
+								<li>Changed home page design to include video in background</li>
+								<li>Adjusted login page to use css and make it look better</li>
+								<li>Followed the software engineering assignment to make different changes to website</li>
+								<li>Created video and uploaded it to website</li>
+								<li>Adjusted request access page</li>
+								<li>Fixed issue with drop down menu to work inside of my logbook page</li>
+							</ul>
+							<ul>
+								<li>Created database using MariaDB</li>
+							</ul>
+							<ul>
+								<li>Created two tables - users(for loging in) and canNetwork</li>
+								<li>Worked with Anas to connect the users table to the website</li>
+								<li>^It worked!!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week8">Week
+						8</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week8">
+						<div class="panel-body">
+							<ul>
+								<li>Created a PHP page to link to GUI</li>
+								<li>Added sessions to php code</li>
+								<li>Created GUI page for the control PC</li>
+								<li>Applied bootstrap to html code</li>
+								<li>Added my picture to the logbook</li>
+								<li>Created a modal for login page</li>
+								<li>Added introduction video to about page</li>
+								<li>Study for DataComm and Software midterms</li>
+								<li>Prepare for the next quiz</li>
+								<li>Complete the data comm assignment</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week9">Week
+						9</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week9">
+						<div class="panel-body">
+						<ul>
+							<li>Worked on project website </li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week10">Week
+						10</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week10">
+						<div class="panel-body">
+						<ul>
+							<li>Worked on project website </li>
+							<li>Connected to database using C++ Connector</li>
+							<li>Worked on reading and writing to the database from PHP</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week11">Week
+						11</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week11">
+						<div class="panel-body">
+						<ul>
+							<li>Continued working on project website </li>
+							<li>Worked on reading and writing to the database from PHP</li>
+								<ul> 
+									<li>Used PDO to connect to the database </li>
+									<li>Following SoftEng notes to implement inputting into database from GUI</li>
+									<li>GUI buttons will directly input elements into database</li>
+								</ul>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week12">Week
+						12</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week12">
+						<div class="panel-body">
+						<ul>
+							<li>Continued working on project website </li>
+							<li>Worked on getting the CAN Network to input into the database</li>
+								<ul> 
+									<li>Used PCAN Basic code and C++ MySQL connector code </li>
+									<li>Used netbeans to code because there are way to many libraries</li>
+									<li>Tested it by connecting two PEAK CAN Connectors to my PC, Sending out the data gets inputted into the table</li>
+								</ul>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week13">Week
+						13</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week13">
+						<div class="panel-body">
+						<ul>
+							<li>Continued working on project website </li>
+							<li>Continued work on reading and writing to the database from PHP</li>
+								<ul> 
+									<li>Made another table for Current floor</li>
+									<li>The table will be used to update the website and supervisor program</li>
+								</ul>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week14">Week
+						14</a></h4>
+					</div>
+					<div class="panel-collapse collapse" id="week14">
+						<div class="panel-body">
+						<ul>
+							<li>worked on Presentation and Report </li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="container-fluid text-center" id="foot">
+		<script src="../js/common.js"></script>
+	</footer>
+</body>
+</html>
+

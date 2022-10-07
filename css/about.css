@@ -1,0 +1,27 @@
+.jumbotron
+{
+	margin: 0px 0px 0px;
+	padding: 80px 0 80px 0;
+}
+
+.container
+{
+	padding: 40px 40px;
+}
+
+#logo
+{
+	padding: 40px 0 20px 0px;
+}
+
+.img-responsive
+{
+	margin: 0 auto 10px;
+}
+
+.container-fluid h1
+{
+	margin-top: 40px;
+	padding: 100px 25px;
+	font-size: 20;
+}

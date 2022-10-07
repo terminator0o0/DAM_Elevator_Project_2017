@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en&quot;">
+<head>
+    <title>Project Plan</title>
+    <meta charset="utf-8">
+    <meta content="" name="decription">
+    <meta content="Group DAM" http-equiv="author">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css"></head>
+    <link rel="stylesheet" type="text/css" href="css/project_plan.css">
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type=
+                    "button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href="index.html">DAM Elevator</a>
+                </div>
+                <div id="myNavbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project_details.html">Project Details</a></li>
+                        <li><a href="project_plan.html">Project Plan</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">LogBooks<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="logbook/dinkar-logbook.html">Dinkar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="logbook/anas-logbook.html">Anas</a></li>
+                                <li class="divider"></li>
+								<li><a href="logbook/mike-logbook.html">Mike</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="request_access.html"><span class="glyphicon glyphicon-user"></span> Sign-Up</a></li>
+                        <li>
+                            <a data-target="#myModal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header"><button class="close" data-dismiss="modal" type=
+                    "button">&times;</button>
+                    <h4 class="modal-title">Login</h4><img alt="" class="profile-img-card" src=
+                    "images/logo_sm.png"></div>
+                    <div class="modal-body">
+                        <form id="form-validate" action="php/login.php" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control" id="username" name="username" placeholder="Enter Username"
+                                type="text">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password"
+                                type="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-default login-btn" type="submit">
+                                    <span class="glyphicon glyphicon-log-in"></span> Log in
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Project Plan</h2>
+        <div class="table-responsive">
+            <div class="well">Phase 1</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th class="activity-th">Activity</th>
+                        <th>Resource</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>Complete project plan</td>
+                        <td>Dinkar, Anas, Mike</td>
+                    </tr>
+                    <tr>
+                        <td>Week 2</td>
+                        <td>
+                            <ul>
+                                <li>Design CAN message protocol</li>
+                                <li>Implement CAN message protocol</li>
+                            </ul>
+                        </td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 3</td>
+                        <td>
+                            <ul>
+                                <li>Create node configuration plan</li>
+                                <li>Implement CAN message protocol</li>
+                                <li>Test CAN network</li>
+                            </ul>
+                        </td>
+                        <td>Name</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <div class="well">Phase 2</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th class="activity-th">Activity</th>
+                        <th>Resource</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 4</td>
+                        <td>Create data repository</td>
+                        <td>Dinkar, Anas, Mike</td>
+                    </tr>
+                    <tr>
+                        <td>Week 5</td>
+                        <td>Design UI</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 6</td>
+                        <td>Implement logger</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 7</td>
+                        <td>Develop Server Program</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 8</td>
+                        <td>Create Remote Access System Test Plan</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 9</td>
+                        <td>Create a Client Program to access Server</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 10</td>
+                        <td>Integrate CAN with LAN</td>
+                        <td>Name</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <div class="well">Phase 3</div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th class="activity-th">Activity</th>
+                        <th>Resource</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 11</td>
+                        <td>Investigate Techniques for data network and Internet</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr>
+                        <td>Week 12</td>
+                        <td>Create Oral Presentaion</td>
+                        <td>Name</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer id="foot" class="container-fluid text-center">
+        <script src="js/common.js"></script>
+    </footer>
+</body>
+</html>

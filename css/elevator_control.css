@@ -1,0 +1,108 @@
+h2
+{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+fieldset
+{
+	border-radius: 20px;
+}
+
+th
+{
+	text-align: center;
+}
+
+#car-controller
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 50vh;
+}
+
+#elevator-controller
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 50vh
+}
+
+#controller-btn
+{
+	width: 150px;
+}
+
+#door-state-btn
+{
+	width: 150px;
+}
+
+#debug-content
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+.floor-req-light
+{
+	display: inline-block;
+	height: 89px;
+	margin-left: 30px;
+}
+
+.door-req-light
+{
+	display: inline-block;
+}
+
+.floor-light
+{
+	display: block;
+    width: 50px;
+    padding: 17px;
+    border: 5px solid gray;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+#members-table
+{
+	display: none;
+}
+
+#can-network-table
+{
+	display: none;
+}
+
+@media only screen and (max-width: 767px)
+{
+	.floor-req-light
+	{
+		display: block;
+		margin: 0;
+		margin-top: 35px;
+	}
+
+	.floor-light
+	{
+		display: inline;
+	}
+
+	#elevator-controller
+	{
+		/*height: 70vh;*/
+	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {background-color: blue;}
+}

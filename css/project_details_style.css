@@ -1,0 +1,80 @@
+#myStyle
+{
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#myStyle h1
+{ 
+  color:white;
+  font-size: 160%;
+}
+
+#myStyle h2
+{
+  color: white;
+  font-size: 125%;
+}
+
+#myStyle p
+{
+  font-size: 100%;
+  line-height: 20px;
+  text-align: justify;
+  text-indent: 15px;
+  }
+#myStyle span.mkunderlined
+{
+	color: yellow;
+	text-decoration: underline;
+}
+
+#myStyle span.mkbold
+{
+	color: yellow;
+	font-weight: bold;
+}	
+
+#can
+{
+	font-weight: bold;
+	color: green;
+}
+
+#hcs12
+{
+	font-weight: bold;
+	color: green;
+}
+	
+#myStyle li
+{
+  font-size: 100%;
+}
+
+#myStyle figcaption
+{
+  font-style: italic;
+  font-size: 90%;
+  text-align: center;
+}
+
+#myStyle figure
+{
+	width: initial;
+  border: 2px solid green;
+  border-radius: 25px 25px 25px 25px;
+  margin: 1em auto;
+}
+
+.img-responsive
+{
+  margin: 0 auto 10px;
+  width: 300px;
+  height: 300px;
+}
+
+section
+{
+  padding: 40px 0 40px 0;
+}

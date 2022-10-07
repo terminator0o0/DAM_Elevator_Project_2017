@@ -1,0 +1,28 @@
+.img-responsive
+{
+	margin: 0 auto 10px;
+	width: 300px;
+	height: 300px;
+}
+
+.panel-group
+{
+	margin-bottom: 0;
+}
+
+.logbook-content
+{
+	padding: 40px 15px 40px 15px;
+	color: black;
+}
+
+#title
+{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#age
+{
+	font-size: 20px;
+}

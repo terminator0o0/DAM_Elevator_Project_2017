@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Anas-LogBook</title>
+    <meta content="Group DAM" http-equiv="author">
+    <meta content="no-cache" http-equiv="pragma">
+    <!-- Latest compiled and minified CSS -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="../css/modal.css" rel="stylesheet" type="text/css">
+    <link href="../css/logbook.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type=
+                    "button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href="../index.html">DAM Elevator</a>
+                </div>
+                <div id="myNavbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../project_details.html">Project Details</a></li>
+                        <li><a href="../project_plan.html">Project Plan</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">LogBooks<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dinkar-logbook.html">Dinkar</a></li>
+                                <li class="divider"></li>
+                                <li><a href="anas-logbook.html">Anas</a></li>
+                                <li class="divider"></li>
+                                <li><a href="mike-logbook.html">Mike</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../request_access.html"><span class="glyphicon glyphicon-user"></span> Sign-Up</a></li>
+                        <li>
+                            <a data-target="#myModal" data-toggle="modal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header"><button class="close" data-dismiss="modal" type=
+                    "button">&times;</button>
+                    <h4 class="modal-title">Login</h4><img alt="" class="profile-img-card" src=
+                    "../images/logo_sm.png"></div>
+                    <div class="modal-body">
+                        <form id="form-validate" action="../php/login.php" method="post">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input class="form-control" id="username" name="username" placeholder="Enter Username"
+                                type="text">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password"
+                                type="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-default" type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="title" class="container-fluid text-center bg-grey-dark">
+        <h1>Anas's Log-Book</h1>
+        <img class="img-responsive img-circle" src="../images/anas.jpg">
+        <p id="name">anas</p>
+		
+    </div>
+    <section class="bg-grey-light">
+        <div class="container logbook-content">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a class="test" data-parent="#accordion" data-toggle="collapse" data-target="#week1" >
+                        <span class="glyphicon glyphicon-collapse-down"></span> Week1</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week1">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Started math assignment 1 and 2</li>
+                                <li>Tested the functionality of CAN Bus</li>
+                                <li>Created the Gantt Chart</li>
+                                <li>Created an HTML page</li>
+                                <li>Read the project description and cahrter</li>
+                                <li>Summarized Thermodynamics notes</li>
+                                <li>Made a GitHub account and pushed log book to it</li>
+                                <li>Completed the natura science lab</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week2">Week
+                        2</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week2">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Finished assignment3 anf 4 in math</li>
+                                <li>Made a list in my HTML Log Book page</li>
+                                <li>Created the high level diagram</li>
+                                <li>Started working on the CAN code</li>
+                                <li>Started the test plan</li>
+                                <li>completed natural science lab</li>
+                                <li>Started the data com first assignemnt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week3">Week
+                        3</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week3">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Got the code to transmit and recieve</li>
+                                <li>Finished Data Com assignment</li>
+                                <li>Started assignment 5 and 6 in math</li>
+                                <li>Completed natural science lab</li>
+                                <li>Finished the test plan</li>
+                                <li>Created the database for our Login page</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week4">Week
+                        4</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week4">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Finished Assignment 5 and 6 in math</li>
+                                <li>Created floor control</li>
+                                <li>Created elevator control</li>
+                                <li>Created Supervisor</li>
+                                <li>Started natural science lab document</li>
+                                <li>Prepared for natural science presentaion</li>
+                                <li>Prepared for thermodynamics lab</li>
+                                <li>Studied for math midterm</li>
+                                <li>Made the state machine for the elevator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week5">Week
+                        5</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week5">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Finished the natural science presentation</li>
+                                <li>Worked on the website</li>
+                                <li>Prepared for Data Communication quiz</li>
+                                <li>Finished for thermodynamics lab</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week6">Week
+                        6</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week6">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Worked on project website and gantt chart</li>
+                                <li>Studied for math quiz</li>
+                                <li>Finished Thermodynamics quiz</li>
+                                <li>Prepared for Software quiz</li>
+                                <li>Finished the login page</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week7">Week
+                        7</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week7">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Worked on project website</li>
+                                <li>Studied for math quiz</li>
+                                <li>Worked on database</li>
+                                <li>Connect database with login page</li>
+                                <li>Worked with CSS to make webpage look better</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week8">Week
+                        8</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week8">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Created a PHP page to link to GUI</li>
+                                <li>Added sessions to php code</li>
+                                <li>Created GUI page for the control PC</li>
+                                <li>Applied bootstrap to html code</li>
+                                <li>Added my picture to the logbook</li>
+                                <li>Created a modal for login page</li>
+                                <li>Added introduction video to about page</li>
+                                <li>Study for DataComm and Software midterms</li>
+                                <li>Prepare for the next quiz</li>
+                                <li>Complete the data comm assignment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week9">Week
+                        9</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week9">
+                        <div class="panel-body">
+                            <ul>
+                              <li>Created a PHP page to link to GUI</li>
+							  <li>Added sessions to php code</li>
+							  <li>Created GUI page for the control PC</li>
+							  <li>Applied bootstrap to html code</li>
+							  <li>Prepare for the next quiz</li>
+                              <li>Complete the datacomm assignment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week10">Week
+                        10</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week10">
+                        <div class="panel-body">
+                            <ul>
+                            <li>Cnnected cpp to users and display database</li>
+							<li>Complete the Gui design</li>
+							<li>Prepared for math midterm</li>
+                            <li>Started the data comm lab3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week11">Week
+                        11</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week11">
+                        <div class="panel-body">
+                            <ul>
+                            <li>Exporting data from database and dump it into the gui</li>
+                            <li>Prepared for software engineering quiz</li>
+                            <li>Started math assignments for next week quiz</li>
+                            <li>Finished natural science lab 6</li>
+                            <li>Finalizing phase 2 requirements for next week</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week12">Week
+                        12</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week12">
+                        <div class="panel-body">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week13">Week
+                        13</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week13">
+                        <div class="panel-body">
+                            <ul>
+                            <li>Created queueTable for the supervisor</li>
+                            <li>Completed Thermodynamics lab 1&2 and research assignment</li>
+                            <li>Integrated the project</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#week14">Week
+                        14</a></h4>
+                    </div>
+                    <div class="panel-collapse collapse" id="week14">
+                        <div class="panel-body">
+                            <ul>
+                            <li>Preparing for Software presentation</li>
+                            <li>Prepare for NC final test</li>
+                            <li>Prepared for final demo of the project</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/logbook.js"></script>
+    </section>
+    <footer id="foot" class="container-fluid text-center">
+        <script src="../js/common.js"></script>
+    </footer>
+</body>
+</html>
